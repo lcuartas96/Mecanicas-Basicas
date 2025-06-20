@@ -268,7 +268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88843e29dc6898344bcaa7ecbe1e7bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prebafInstancia: {fileID: 0}
+  prebafInstancia: {fileID: 7153180082048132326, guid: 986c51982f942a246937cb671f8cd9c7,
+    type: 3}
   posicionInstancia: {fileID: 0}
   nombre: 
   descripcion: 

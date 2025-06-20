@@ -1,7 +1,8 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GuardarPieza : MonoBehaviour
+public class Guardar_elemento : MonoBehaviour
 {
     public string nombrePiezaBoton; // Nombre para asignarle al boton de la piza
     public string nombrePieza; // Nombre completo de la pieza para el titulo

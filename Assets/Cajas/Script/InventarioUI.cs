@@ -43,7 +43,79 @@ public class InventarioUI : MonoBehaviour
 }
 */
 
-using UnityEngine.UI;
+/*using UnityEngine.UI;
+using UnityEngine;
+using TMPro;
+
+public class InventarioUI : MonoBehaviour
+{
+    public GameObject buttonPrefab; // Prefab del botón
+    public Transform contentPanel;  // Contenedor de los botones (dentro del panel del inventario)
+    public Transform[] puntosInstancia; // Varios puntos de instancia
+    private GameObject prefabSeleccionado; // El prefab seleccionado actualmente
+    private int contadorInstancias; // Para limitar la cantidad de objetos en el inventario*/
+
+/*public void AgregarAlInventario(Sprite icono, GameObject prefab, string nombreBoton, string descripcionPieza)
+{
+    if (contadorInstancias < 13)
+    {
+        prefabSeleccionado = prefab;
+
+        GameObject nuevoBoton = Instantiate(buttonPrefab, contentPanel);
+        Image imagenIcono = nuevoBoton.GetComponentInChildren<Image>();
+        imagenIcono.sprite = icono;
+
+        TextMeshProUGUI textoBoton = nuevoBoton.GetComponentInChildren<TextMeshProUGUI>();
+        textoBoton.text = nombreBoton;
+
+        btnInventario btnInventario = nuevoBoton.GetComponent<btnInventario>();
+        btnInventario.prebafInstancia = prefabSeleccionado;
+
+        // Asignación secuencial del punto de instancia
+        btnInventario.posicionInstancia = puntosInstancia[contadorInstancias % puntosInstancia.Length];
+
+        btnInventario.descripcion = descripcionPieza;
+        btnInventario.nombre = nombreBoton;
+
+        Button btn = nuevoBoton.GetComponent<Button>();
+        btn.onClick.AddListener(btnInventario.InstanciarPiezaMotor);
+    }
+    contadorInstancias += 1;
+}*/
+
+/* public void AgregarAlInventario(Sprite icono, GameObject prefab, string nombreBoton, string descripcionPieza)
+ {
+     if (contadorInstancias < 13)
+     {
+         prefabSeleccionado = prefab;
+
+         GameObject nuevoBoton = Instantiate(buttonPrefab, contentPanel);
+         Image imagenIcono = nuevoBoton.GetComponentInChildren<Image>();
+         imagenIcono.sprite = icono;
+
+         TextMeshProUGUI textoBoton = nuevoBoton.GetComponentInChildren<TextMeshProUGUI>();
+         textoBoton.text = nombreBoton;
+
+         btnInventario btnInventario = nuevoBoton.GetComponent<btnInventario>();
+         btnInventario.prebafInstancia = prefabSeleccionado;
+
+         // Asignación aleatoria del punto de instancia
+         btnInventario.posicionInstancia = puntosInstancia[Random.Range(0, puntosInstancia.Length)];
+
+         btnInventario.descripcion = descripcionPieza;
+         btnInventario.nombre = nombreBoton;
+
+         Button btn = nuevoBoton.GetComponent<Button>();
+         btn.onClick.AddListener(btnInventario.InstanciarPiezaMotor);
+
+         contadorInstancias += 1;
+     }
+ }
+
+}*/
+
+
+/*using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
@@ -82,4 +154,52 @@ public class InventarioUI : MonoBehaviour
         }
         contadorInstancias += 1;
     }
+}*/
+
+
+
+using UnityEngine.UI;
+using UnityEngine;
+using TMPro;
+
+public class InventarioUI : MonoBehaviour
+{
+    public GameObject buttonPrefab;
+    public Transform contentPanel;
+    public Transform[] puntosInstancia;
+    private int contadorInstancias;
+
+    public void AgregarAlInventario(Sprite icono, GameObject prefab, string nombreBoton, string descripcionPieza, GameObject objetoEscena)
+    {
+        if (contadorInstancias < 13)
+        {
+            GameObject nuevoBoton = Instantiate(buttonPrefab, contentPanel);
+
+            Image imagenIcono = nuevoBoton.GetComponentInChildren<Image>();
+            if (imagenIcono != null)
+                imagenIcono.sprite = icono;
+
+            TextMeshProUGUI textoBoton = nuevoBoton.GetComponentInChildren<TextMeshProUGUI>();
+            if (textoBoton != null)
+                textoBoton.text = nombreBoton;
+
+            btnInventario btn = nuevoBoton.GetComponent<btnInventario>();
+            btn.prebafInstancia = prefab; // Solo como respaldo
+            btn.objetoEscena = objetoEscena; // El objeto real desactivado
+            btn.posicionInstancia = puntosInstancia[contadorInstancias % puntosInstancia.Length];
+            btn.descripcion = descripcionPieza;
+            btn.nombre = nombreBoton;
+
+            Button botonUI = nuevoBoton.GetComponent<Button>();
+            botonUI.onClick.AddListener(btn.InstanciarPiezaMotor);
+
+            contadorInstancias += 1;
+        }
+    }
 }
+
+
+
+
+
+
