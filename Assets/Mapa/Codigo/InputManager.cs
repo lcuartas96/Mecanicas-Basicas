@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InputManager : MonoBehaviour
 {
@@ -11,6 +14,20 @@ public class InputManager : MonoBehaviour
 
     [SerializeField]
     private LayerMask placementLayermask;
+
+    public event Action OnClicked, OnExit;
+
+     private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+            OnClicked?.Invoke();
+        if (Input.GetKeyDown(KeyCode.Escape))
+            OnExit?.Invoke();
+    }
+
+    public bool IsPointerOverUI()
+        => EventSystem.current.IsPointerOverGameObject();
+
 
     public Vector3 GetSelectedMapPosition()
     {
@@ -26,15 +43,5 @@ public class InputManager : MonoBehaviour
         return lastPosition;
     }
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3628e527104413c44baef038f6759ede, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: 
+  objectsData:
+  - <Name>k__BackingField: Caja
+    <ID>k__BackingField: 1
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 3975971421519028769, guid: 8bb2c7b72ae4ce94a80a68b43b0cc5b8,
+      type: 3}
+  - <Name>k__BackingField: Banda Trasportadora
+    <ID>k__BackingField: 1
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 4021487497014210703, guid: c0154efa877083d4f8c07ea7f6cce683,
+      type: 3}
