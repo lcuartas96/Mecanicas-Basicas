@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsData:
   - <Name>k__BackingField: Caja
-    <ID>k__BackingField: 1
+    <ID>k__BackingField: 0
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 3975971421519028769, guid: 8bb2c7b72ae4ce94a80a68b43b0cc5b8,
       type: 3}
