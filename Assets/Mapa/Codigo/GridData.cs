@@ -41,6 +41,7 @@ public class GridData
             if (placedObjects.ContainsKey(pos))
                 return false;
         }
+        return true;
     }
 }
 
