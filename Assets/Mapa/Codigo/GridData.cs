@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -14,7 +15,7 @@ public class GridData
         foreach (var pos in positionToOccupy)
         {
             if (placedObjects.ContainsKey(pos))
-                throw new Exception($"Dictionary already contains this cell positiojn {pos}");
+                throw new Exception($"Dictionary already contains this cell position {pos}");
             placedObjects[pos] = data;
         }
     }
