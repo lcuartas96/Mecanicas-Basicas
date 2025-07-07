@@ -19,6 +19,10 @@ public class PlacemenSystem : MonoBehaviour
     [SerializeField]
     private GameObject gridVisualization;
 
+    [SerializeField]
+    //private AudioSource source;
+
+
     private GridData floorData, furnitureData;
 
     private Renderer previewRenderer;
@@ -58,6 +62,7 @@ public class PlacemenSystem : MonoBehaviour
         {
             return;
         }
+       
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
@@ -65,6 +70,7 @@ public class PlacemenSystem : MonoBehaviour
         if (placementValidity == false)
             return;
 
+        //source.Play();
 
         GameObject newObject = Instantiate(database.objectsData[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
