@@ -25,16 +25,21 @@ public class PlacemenSystem : MonoBehaviour
 
     private GridData floorData, furnitureData;
 
-    private Renderer previewRenderer;
+    //private Renderer previewRenderer;
 
     private List<GameObject> placedGameOjbect = new();
+
+    [SerializeField]
+    private PreviewSystem preview;
+
+    private Vector3Int lastDetectedPosition = Vector3Int.zero;
 
     private void Start()
     {
         StopPlacement();
         floorData = new();
         furnitureData = new();
-        previewRenderer = cellIndicator.GetComponentInChildren<Renderer>();
+        //previewRenderer = cellIndicator.GetComponentInChildren<Renderer>();
 
 
 
@@ -51,7 +56,10 @@ public class PlacemenSystem : MonoBehaviour
 
         }
         gridVisualization.SetActive(true);
-        cellIndicator.SetActive(true);
+        preview.StartShowingPlacementPreview(
+            database.objectsData[selectedObjectIndex].Prefab,
+            database.objectsData[selectedObjectIndex].Size);
+        //cellIndicator.SetActive(true);
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;
     }
@@ -68,10 +76,14 @@ public class PlacemenSystem : MonoBehaviour
 
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if (placementValidity == false)
+        {
+            //source.PlayOneShot(wrongPlacemenClip);
             return;
+        }
+
 
         //source.Play();
-
+        //source.PlayOneShot(correctPlacementClip);
         GameObject newObject = Instantiate(database.objectsData[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
         placedGameOjbect.Add(newObject);
@@ -82,6 +94,7 @@ public class PlacemenSystem : MonoBehaviour
             database.objectsData[selectedObjectIndex].Size,
             database.objectsData[selectedObjectIndex].ID,
             placedGameOjbect.Count - 1);
+        preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
     private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
@@ -97,9 +110,11 @@ public class PlacemenSystem : MonoBehaviour
     {
         selectedObjectIndex = -1;
         gridVisualization.SetActive(false);
-        cellIndicator.SetActive(false);
+        //cellIndicator.SetActive(false);
+        preview.StopShowingPreview();
         inputManager.OnClicked -= PlaceStructure;
         inputManager.OnExit -= StopPlacement;
+        lastDetectedPosition = Vector3Int.zero;
         
       
     }
@@ -111,12 +126,20 @@ public class PlacemenSystem : MonoBehaviour
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-        previewRenderer.material.color = placementValidity ? Color.white : Color.red;
+        if(lastDetectedPosition != gridPosition)
+        {
+
+       
+            bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+            //previewRenderer.material.color = placementValidity ? Color.white : Color.red;
 
 
-        mouseIndicator.transform.position = mousePosition;
-        cellIndicator.transform.position = grid.CellToWorld(gridPosition);
+            mouseIndicator.transform.position = mousePosition;
+            //cellIndicator.transform.position = grid.CellToWorld(gridPosition);
+
+            preview.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+            lastDetectedPosition = gridPosition;
+        }
     }
 
 }
