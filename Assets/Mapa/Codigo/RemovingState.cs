@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,14 +50,29 @@ public class RemovingState : IBuildingState
         }
         else
         {
-          //  gameObjectIndex = selectedData.GetRepresentationIndex(gridPosition);
+           gameObjectIndex = selectedData.GetRepresentationIndex(gridPosition);
+            if (gameObjectIndex == -1)
+                return;
+            selectedData.RemoveObjectAt(gridPosition);
+            objectPlacer.RemoveObjectAt(gameObjectIndex);
         }
+        Vector3 cellPosition = grid.CellToWorld(gridPosition);
+        previewSystem.UpdatePosition(cellPosition, CheckIfSelectionIsValid(gridPosition));
 
+    }
+
+    private bool CheckIfSelectionIsValid(Vector3Int gridPosition)
+    {
+        return !(furnitureData.CanPlaceObejcAt(gridPosition, Vector2Int.one) && 
+            floorData.CanPlaceObejcAt(gridPosition, Vector2Int.one));
     }
 
     public void UpdateState(Vector3Int gridPosition)
     {
-        throw new System.NotImplementedException();
+
+        bool validity = CheckIfSelectionIsValid(gridPosition);
+        previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), validity);
+       
     }
 
     //SoundFeedback soundFeedback;

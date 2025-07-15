@@ -22,7 +22,7 @@ public class PreviewSystem : MonoBehaviour
     {
         previewMaterialInstance = new Material(previewMaterialsPrefab);
         cellIndicator.SetActive(false);
-
+        cellIndicatorRenderer = cellIndicator.GetComponentInChildren<Renderer>();
     }
 
     public void StartShowingPlacementPreview(GameObject prefab, Vector2Int size)
@@ -38,7 +38,8 @@ public class PreviewSystem : MonoBehaviour
        if(size.x > 0 || size.y > 0)
         {
             cellIndicator.transform.localScale = new Vector3(size.x, 1, size.y);
-            cellIndicator.GetComponentInChildren<Renderer>().material.mainTextureScale = size;
+            //cellIndicator.GetComponentInChildren<Renderer>().material.mainTextureScale = size;
+            cellIndicatorRenderer.material.mainTextureScale = size;
         }
     }
 
@@ -118,6 +119,7 @@ public class PreviewSystem : MonoBehaviour
 
     internal void StartShowingRemovePreview()
     {
+        cellIndicator.SetActive(true);
         PrepareCursor(Vector2Int.one);
         ApplyFeedbackToCursor(false);
     }
