@@ -20,21 +20,21 @@ MonoBehaviour:
       type: 3}
   - <Name>k__BackingField: Caja
     <ID>k__BackingField: 1
-    <Size>k__BackingField: {x: 2, y: 2}
+    <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 3975971421519028769, guid: 8bb2c7b72ae4ce94a80a68b43b0cc5b8,
       type: 3}
-  - <Name>k__BackingField: Banda
+  - <Name>k__BackingField: Modulo1
     <ID>k__BackingField: 2
-    <Size>k__BackingField: {x: 2, y: 2}
-    <Prefab>k__BackingField: {fileID: 4021487497014210703, guid: c0154efa877083d4f8c07ea7f6cce683,
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: e5c1201382184d341a05d77f306c6a13,
       type: 3}
-  - <Name>k__BackingField: estanterias
+  - <Name>k__BackingField: modulo2
     <ID>k__BackingField: 3
-    <Size>k__BackingField: {x: 2, y: 2}
-    <Prefab>k__BackingField: {fileID: 7419408357086934562, guid: 27c979fe2781d9042a6aad1d4ca7eaa3,
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: 24a32185fbab0ca44b858c9d8e373d4d,
       type: 3}
-  - <Name>k__BackingField: Pared
+  - <Name>k__BackingField: Modulo3
     <ID>k__BackingField: 4
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 727485962948044874, guid: f7607ed14554aa44d87e75ee02c95aa1,
+    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: 5e04f2296213ae04faca86341993e07b,
       type: 3}
