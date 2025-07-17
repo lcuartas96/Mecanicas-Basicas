@@ -26,12 +26,12 @@ MonoBehaviour:
   - <Name>k__BackingField: Modulo1
     <ID>k__BackingField: 2
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: e5c1201382184d341a05d77f306c6a13,
+    <Prefab>k__BackingField: {fileID: 6858224409033897220, guid: 671a9f541319323419b24fce6d38f6f0,
       type: 3}
   - <Name>k__BackingField: modulo2
     <ID>k__BackingField: 3
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: 24a32185fbab0ca44b858c9d8e373d4d,
+    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: 262ff782bda49f94fa29596dc5a00871,
       type: 3}
   - <Name>k__BackingField: Modulo3
     <ID>k__BackingField: 4
