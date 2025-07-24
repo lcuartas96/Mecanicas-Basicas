@@ -268,9 +268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3ffde2e093a3e459a38ce434af2b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabInstancia: {fileID: 1954929875541532964, guid: 77c32dcd4b2bb6443a522d0c3ed4a18c,
+  prefabInstancia: {fileID: 7826155230058935423, guid: 0988491b060499e44996657ad8d3a516,
     type: 3}
   posicionInstancia: {fileID: 0}
   nombre: 
   descripcion: 
   objetoEscena: {fileID: 0}
+  rotacionPersonalizada: {x: 0, y: 0, z: 0}

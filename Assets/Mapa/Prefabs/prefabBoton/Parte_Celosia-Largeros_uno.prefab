@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6224198394612763994}
   - component: {fileID: 902887601982039903}
   - component: {fileID: 6076824661191338392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Parte_Celosia-Largeros_uno
-  m_TagString: Untagged
+  m_TagString: Piezas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,5 +101,5 @@ MonoBehaviour:
   descripcionPieza: 
   prefabInstancia: {fileID: 0}
   icono: {fileID: 0}
-  indicePuntoInstancia: 0
+  indicesPuntosInstancia: 
   rotacionPersonalizada: {x: 0, y: 0, z: 0}

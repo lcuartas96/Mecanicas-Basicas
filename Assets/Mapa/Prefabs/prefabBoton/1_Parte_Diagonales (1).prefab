@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2854075718344049394}
   - component: {fileID: 5318476914954187029}
   - component: {fileID: 2819766098167117015}
-  - component: {fileID: 2826786139547349999}
+  - component: {fileID: -3049953142536068168}
   m_Layer: 6
   m_Name: 1_Parte_Diagonales (1)
   m_TagString: Piezas
@@ -155,7 +155,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2826786139547349999
+--- !u!114 &-3049953142536068168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,13 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7939291202868044842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 843a288031132e545a1d6c9427c9ae1b, type: 3}
+  m_Script: {fileID: 11500000, guid: a066ae00928d08b478c3f8c294637552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePiezaBoton: jj
-  nombrePieza: jj
+  nombrePiezaBoton: 
+  nombrePieza: 
   descripcionPieza: 
   prefabInstancia: {fileID: 7939291202868044842}
-  icono: {fileID: 21300000, guid: f588d850485d0ae479d73cf3bd0b7b00, type: 3}
-  indicePuntoInstancia: 1
-  rotacionPersonalizada: {x: -89.98, y: 0, z: 0}
+  icono: {fileID: 21300000, guid: 9d7c6e4896067aa4fa512a00f692ac1c, type: 3}

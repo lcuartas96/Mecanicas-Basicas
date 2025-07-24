@@ -51,5 +51,25 @@ MonoBehaviour:
   - <Name>k__BackingField: Parte_Puntales_2
     <ID>k__BackingField: 7
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 6674179695909938161, guid: 556be0d86a3623542921b0cf30b9e537,
+    <Prefab>k__BackingField: {fileID: 7826155230058935423, guid: 0988491b060499e44996657ad8d3a516,
+      type: 3}
+  - <Name>k__BackingField: Convensional_simple
+    <ID>k__BackingField: 8
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 5804617014141602904, guid: 165e546436a85534aa19b97286d489f2,
+      type: 3}
+  - <Name>k__BackingField: Convensional_simple
+    <ID>k__BackingField: 9
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 5082156195083289583, guid: 19c737d7faf3709409110a9e19b80a08,
+      type: 3}
+  - <Name>k__BackingField: Convensional_simple
+    <ID>k__BackingField: 10
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4814930133783567509, guid: b901cb2ec24b128428809bd2e57a5281,
+      type: 3}
+  - <Name>k__BackingField: 'Convensional_simple completa '
+    <ID>k__BackingField: 11
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 986595155735784314, guid: ab0a767a041ddbe4494a3a97833fecfc,
       type: 3}
