@@ -13,14 +13,14 @@ public class PreviewSystem : MonoBehaviour
     private GameObject previewObject;
 
     [SerializeField]
-    private Material previewMaterialsPrefab;
-    private Material previewMaterialInstance;
+    //private Material previewMaterialsPrefab;
+    //private Material previewMaterialInstance;
 
     private Renderer cellIndicatorRenderer;
 
     private void Start()
     {
-        previewMaterialInstance = new Material(previewMaterialsPrefab);
+        //previewMaterialInstance = new Material(previewMaterialsPrefab);
         cellIndicator.SetActive(false);
         cellIndicatorRenderer = cellIndicator.GetComponentInChildren<Renderer>();
     }
@@ -53,7 +53,7 @@ public class PreviewSystem : MonoBehaviour
             Material[] materials = renderer.materials;
             for (int i = 0; i < materials.Length; i++)
             {
-                materials[i] = previewMaterialInstance;
+                //materials[i] = previewMaterialInstance;
             }
             renderer.materials = materials;
         }
@@ -91,7 +91,7 @@ public class PreviewSystem : MonoBehaviour
         Color c = validity ? Color.white : Color.red;
 
         c.a = 0.5f;
-        previewMaterialInstance.color = c;
+        //previewMaterialInstance.color = c;
     }
 
     private void ApplyFeedbackToCursor(bool validity)

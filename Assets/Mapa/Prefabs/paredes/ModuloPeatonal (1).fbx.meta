@@ -3,7 +3,17 @@ guid: 63ef7155bd6a97d478e8fbef6945ce7d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MODULO_PUERTA_PEATONAL
+    second: {fileID: 2100000, guid: 995ce5fc399365c488bc474f13b9a09f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Trans_MODULO_PUERTA_PEATONAL
+    second: {fileID: 2100000, guid: 7bc8340b83cfceb4cafa865bddb5a12b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

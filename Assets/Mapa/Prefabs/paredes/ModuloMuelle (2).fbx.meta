@@ -3,7 +3,32 @@ guid: 262ff782bda49f94fa29596dc5a00871
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MARCO_MUELLE
+    second: {fileID: 2100000, guid: eb9bb906ffc80c1438f9ad79eea84ea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MARCO_Trans_MUELLE
+    second: {fileID: 2100000, guid: c57865f4784e4244d8e24344215d053c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PLATAFORMA
+    second: {fileID: 2100000, guid: b6b9f4e17b392324fa46481ed69ad420, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PUERTA_MUELLE
+    second: {fileID: 2100000, guid: 2dd91a1363a341a49a8af2ae3b79721b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Trans_PUERTA_MUELLE
+    second: {fileID: 2100000, guid: f45713f7e47874c4ba224c581fdbbf39, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,5 +1,5 @@
 ﻿using TMPro;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 using UnityEngine;
 
 public class PausaMenu : MonoBehaviour
@@ -10,7 +10,7 @@ public class PausaMenu : MonoBehaviour
     //public TextMeshProUGUI txtID;
     public bool juegoPausado = false;
 
-    private Animator menuPausa;
+    //private Animator menuPausa;
 
     private void Awake()
     {
@@ -45,7 +45,7 @@ public class PausaMenu : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                menuPausa.SetBool("mostrar", true);
+               // menuPausa.SetBool("mostrar", true);
                 juegoPausado = true;
                // AudioManager.Instance.PlayEfect(0);
             }
@@ -56,12 +56,12 @@ public class PausaMenu : MonoBehaviour
     {
         //AudioManager.Instance.PlayEfect(0);
         juegoPausado = false;
-        menuPausa.SetBool("mostrar", false);
+        //menuPausa.SetBool("mostrar", false);
     }
     public void Pausar()
     {
         //AudioManager.Instance.PlayEfect(0);
         juegoPausado = true;
-        menuPausa.SetBool("mostrar", true);
+        //menuPausa.SetBool("mostrar", true);
     }
 }
