@@ -6176,7 +6176,7 @@ GameObject:
   - component: {fileID: 1327557362}
   - component: {fileID: 1327557361}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ModuloMuelle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6857,12 +6857,12 @@ PrefabInstance:
     - target: {fileID: 6073259700548097891, guid: c6d03083ed9b7354a846b08b96447736,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 0.456
       objectReference: {fileID: 0}
     - target: {fileID: 6073259700548097891, guid: c6d03083ed9b7354a846b08b96447736,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.22
+      value: 0.162
       objectReference: {fileID: 0}
     - target: {fileID: 6073259700548097891, guid: c6d03083ed9b7354a846b08b96447736,
         type: 3}
@@ -9009,6 +9009,53 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.789, y: 0.493, z: -23.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2080010008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080010010}
+  - component: {fileID: 2080010009}
+  m_Layer: 0
+  m_Name: ConstructionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2080010009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080010008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b237e3a12e7e94492741ab08b412c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabSeleccionado: {fileID: 0}
+  objetoEnConstruccion: {fileID: 0}
+  velocidadRotacion: 90
+--- !u!4 &2080010010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080010008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.109998, y: 6.7744837, z: -73.26062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11792,3 +11839,4 @@ SceneRoots:
   - {fileID: 1893253880}
   - {fileID: 405426526}
   - {fileID: 854248502}
+  - {fileID: 2080010010}

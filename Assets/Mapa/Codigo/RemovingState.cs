@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -73,6 +73,12 @@ public class RemovingState : IBuildingState
         bool validity = CheckIfSelectionIsValid(gridPosition);
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), validity);
        
+    }
+
+    // ✅ Agrega esto para cumplir con la interfaz
+    public void RotatePreview() // ACA NO HACE NADA PERO SE LLAMA PARA LA ROTACION DEL OBJETO
+    {
+        // No hace nada, porque al remover no necesitas rotar nada
     }
 
     //SoundFeedback soundFeedback;

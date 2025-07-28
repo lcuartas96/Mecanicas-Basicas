@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,6 +42,8 @@ public class PlacemenSystem : MonoBehaviour
     //bool isRemoving;
 
     IBuildingState buildingState;
+
+
 
     private void Start()
     {
@@ -167,6 +169,12 @@ public class PlacemenSystem : MonoBehaviour
         {
             buildingState.UpdateState(gridPosition);
             lastDetectedPosition = gridPosition;
+        }
+
+        // 👉 Aquí agregas la entrada para rotar:
+        if (Input.GetKeyDown(KeyCode.R))  // ROTA CON LA TECLA R
+        {
+            buildingState.RotatePreview();
         }
     }
 

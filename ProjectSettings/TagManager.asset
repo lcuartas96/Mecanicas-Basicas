@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Caja
   - Piezas
+  - Camera.main
   layers:
   - Default
   - TransparentFX

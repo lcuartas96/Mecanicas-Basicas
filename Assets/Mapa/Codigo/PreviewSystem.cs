@@ -85,6 +85,13 @@ public class PreviewSystem : MonoBehaviour
 
 
     }
+    public void UpdateRotation(float yRotation)
+    {
+        if (previewObject == null) return;
+
+        previewObject.transform.rotation = Quaternion.Euler(0, yRotation, 0); // SE AGREGO PARA LA ROTACION 
+    }
+
 
     private void ApplyFeedbackToPreview(bool validity)
     {
