@@ -66,20 +66,10 @@ MonoBehaviour:
   - <Name>k__BackingField: Convensional_simple
     <ID>k__BackingField: 10
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 4814930133783567509, guid: b901cb2ec24b128428809bd2e57a5281,
-      type: 3}
-  - <Name>k__BackingField: 'Convensional_simple completa '
-    <ID>k__BackingField: 11
-    <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 986595155735784314, guid: ab0a767a041ddbe4494a3a97833fecfc,
       type: 3}
-  - <Name>k__BackingField: Convensional_Doble
-    <ID>k__BackingField: 12
+  - <Name>k__BackingField: Convensional_simple_Arriba
+    <ID>k__BackingField: 11
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 5494112092921222589, guid: 1f04ccc551c61774a8189adb93787305,
-      type: 3}
-  - <Name>k__BackingField: Convensional_Doble
-    <ID>k__BackingField: 13
-    <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+    <Prefab>k__BackingField: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
       type: 3}

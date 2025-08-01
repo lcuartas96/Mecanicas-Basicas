@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3619562945883083929}
   - component: {fileID: 7677388213378835127}
   - component: {fileID: 2724307887457977450}
-  - component: {fileID: 5137715955043922420}
+  - component: {fileID: 3045911449458010188}
   m_Layer: 6
   m_Name: Convencional_simple
   m_TagString: Piezas
@@ -83,7 +83,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5137715955043922420
+--- !u!114 &3045911449458010188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,14 +92,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 986595155735784314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a066ae00928d08b478c3f8c294637552, type: 3}
+  m_Script: {fileID: 11500000, guid: 843a288031132e545a1d6c9427c9ae1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePiezaBoton: jj
-  nombrePieza: jj
-  descripcionPieza: jj
+  nombrePiezaBoton: 
+  nombrePieza: 
+  descripcionPieza: 
   prefabInstancia: {fileID: 986595155735784314}
-  icono: {fileID: 21300000, guid: 9d7c6e4896067aa4fa512a00f692ac1c, type: 3}
+  icono: {fileID: 21300000, guid: f6e4d6a0570e99449a79b5e73c623f90, type: 3}
+  indicesPuntosInstancia: 0000000001000000
+  rotacionPersonalizada: {x: 0, y: 0, z: 0}
 --- !u!1001 &3803882406991317412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,6 +170,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed3075c900701c54385cabffeb082376,
+        type: 3}
+      propertyPath: m_TagString
+      value: Piezas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -180,6 +187,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8284051909675068388}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed3075c900701c54385cabffeb082376,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 476891407131021746}
   m_SourcePrefab: {fileID: 100100000, guid: ed3075c900701c54385cabffeb082376, type: 3}
 --- !u!4 &3693131568927092303 stripped
 Transform:
@@ -241,3 +252,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.028432617, y: 0.009795301, z: 0.024997607}
   m_Center: {x: -0.001498566, y: -0.00000038160937, z: 0.0028937017}
+--- !u!114 &476891407131021746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038448161534932213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a288031132e545a1d6c9427c9ae1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombrePiezaBoton: 
+  nombrePieza: 
+  descripcionPieza: 
+  prefabInstancia: {fileID: 986595155735784314}
+  icono: {fileID: 21300000, guid: f6e4d6a0570e99449a79b5e73c623f90, type: 3}
+  indicesPuntosInstancia: 0000000001000000
+  rotacionPersonalizada: {x: 0, y: 0, z: 0}

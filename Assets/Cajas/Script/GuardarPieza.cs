@@ -1,4 +1,4 @@
-
+Ôªø
 using UnityEngine;
 
 public class GuardarPieza : MonoBehaviour
@@ -8,8 +8,8 @@ public class GuardarPieza : MonoBehaviour
     [TextArea(3, 10)]
     public string descripcionPieza; // Descripcion de para que sirve esa pieza
 
-    public GameObject prefabInstancia; // El prefab que posteriormente instanciar· esa pieza
-    public Sprite icono; // Imagen para mostrar en el botÛn del inventario
+    public GameObject prefabInstancia; // El prefab que posteriormente instanciar√° esa pieza
+    public Sprite icono; // Imagen para mostrar en el bot√≥n del inventario
 
 
     /// <summary>
