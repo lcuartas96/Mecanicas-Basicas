@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7677388213378835127}
   - component: {fileID: 2724307887457977450}
   - component: {fileID: 3045911449458010188}
+  - component: {fileID: 1872365491863960366}
   m_Layer: 6
   m_Name: Convencional_simple
   m_TagString: Piezas
@@ -78,7 +79,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -100,8 +101,20 @@ MonoBehaviour:
   descripcionPieza: 
   prefabInstancia: {fileID: 986595155735784314}
   icono: {fileID: 21300000, guid: f6e4d6a0570e99449a79b5e73c623f90, type: 3}
-  indicesPuntosInstancia: 0000000001000000
-  rotacionPersonalizada: {x: 0, y: 0, z: 0}
+--- !u!114 &1872365491863960366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986595155735784314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1198f19533942bb46b41ca3086bed69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pisos: []
+  altura: 0
 --- !u!1001 &3803882406991317412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,6 +204,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 476891407131021746}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed3075c900701c54385cabffeb082376,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6607215800499272147}
   m_SourcePrefab: {fileID: 100100000, guid: ed3075c900701c54385cabffeb082376, type: 3}
 --- !u!4 &3693131568927092303 stripped
 Transform:
@@ -269,5 +286,17 @@ MonoBehaviour:
   descripcionPieza: 
   prefabInstancia: {fileID: 986595155735784314}
   icono: {fileID: 21300000, guid: f6e4d6a0570e99449a79b5e73c623f90, type: 3}
-  indicesPuntosInstancia: 0000000001000000
-  rotacionPersonalizada: {x: 0, y: 0, z: 0}
+--- !u!114 &6607215800499272147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038448161534932213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1198f19533942bb46b41ca3086bed69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pisos: []
+  altura: 0
