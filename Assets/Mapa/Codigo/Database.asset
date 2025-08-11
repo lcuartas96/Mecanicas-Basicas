@@ -68,12 +68,23 @@ MonoBehaviour:
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 7101393528513500905, guid: 9071e4f2e22d6d0489a4eaf5168b0a21,
       type: 3}
-  - <Name>k__BackingField: Convensional_simple_Arriba
+  - <Name>k__BackingField: Doble
     <ID>k__BackingField: 11
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+    <Prefab>k__BackingField: {fileID: 2458532975563338699, guid: 5cea3be92e117834dae45dba7e2c2f62,
       type: 3}
-  - <Name>k__BackingField: Convensional_simple_Arriba
-    <ID>k__BackingField: 11
+  - <Name>k__BackingField: Carton_flow
+    <ID>k__BackingField: 12
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 2988562340548918559, guid: ea7eb3f72797416498051845301f3bd0,
+      type: 3}
+  - <Name>k__BackingField: Carton_Flow_2
+    <ID>k__BackingField: 13
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 2227305497587751518, guid: 1a1f335d7af6d014cbde42192210db16,
+      type: 3}
+  - <Name>k__BackingField: Drive_in
+    <ID>k__BackingField: 14
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 6263669520344722678, guid: af0eb34cc6e1c0446b7aca37ad051864,
+      type: 3}

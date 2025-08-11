@@ -3,7 +3,27 @@ guid: 668168dffc9b3714eb772d6a0d10d056
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ruedas
+    second: {fileID: 2100000, guid: da0804fe3ef16d04e8696ba4c6614541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trilateral_Base
+    second: {fileID: 2100000, guid: 2caf137bfdca70440b63169c3a05e1d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trilateral_Manejador
+    second: {fileID: 2100000, guid: 0ea12fe78fb4804449de2c5056c10e84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trilateral_Tubos
+    second: {fileID: 2100000, guid: b93b6f42b83e2e643af837f30b451f96, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
