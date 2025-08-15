@@ -7,6 +7,8 @@ TagManager:
   - Caja
   - Piezas
   - Camera.main
+  - Estanteria
+  - ZonaProhibida
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Piezas
-  - 
+  - ZonaProhibida
   - 
   - 
   - 

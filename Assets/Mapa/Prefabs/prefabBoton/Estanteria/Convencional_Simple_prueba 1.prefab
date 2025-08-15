@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 5815464398585496906}
   m_Layer: 0
   m_Name: Convencional_Simple_prueba 1
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1079,8 +1079,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 986595155735784314, guid: ab0a767a041ddbe4494a3a97833fecfc,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986595155735784314, guid: ab0a767a041ddbe4494a3a97833fecfc,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986595155735784314, guid: ab0a767a041ddbe4494a3a97833fecfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 1872365491863960366, guid: ab0a767a041ddbe4494a3a97833fecfc,
         type: 3}
@@ -1146,6 +1156,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038448161534932213, guid: ab0a767a041ddbe4494a3a97833fecfc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038448161534932213, guid: ab0a767a041ddbe4494a3a97833fecfc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3045911449458010188, guid: ab0a767a041ddbe4494a3a97833fecfc, type: 3}
@@ -1278,6 +1298,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1332,6 +1357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Simple_Primario
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706013252337203339, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6858247101871673984, guid: 8cd11c5597273714faa32638ad1a556d, type: 3}

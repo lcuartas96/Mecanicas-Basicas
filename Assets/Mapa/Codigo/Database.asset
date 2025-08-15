@@ -36,7 +36,7 @@ MonoBehaviour:
   - <Name>k__BackingField: Modulo3
     <ID>k__BackingField: 4
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 919132149155446097, guid: bfae3b9fa4c66a54486680a4b2a8e121,
+    <Prefab>k__BackingField: {fileID: 6971552622786846631, guid: 5b34a1e6fde782b4bb9fa90728880422,
       type: 3}
   - <Name>k__BackingField: Parte_Puntales
     <ID>k__BackingField: 5
