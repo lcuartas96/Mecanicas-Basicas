@@ -194,4 +194,3 @@ public class PlacementState : IBuildingState
             currentRotation = 0f;
     }
 }
-

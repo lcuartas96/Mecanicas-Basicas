@@ -10,7 +10,7 @@ public class PreviewSystem : MonoBehaviour
 
     [SerializeField]
     private GameObject cellIndicator;
-    private GameObject previewObject;
+    public GameObject previewObject;
 
     [SerializeField]
     //private Material previewMaterialsPrefab;

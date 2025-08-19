@@ -44,7 +44,6 @@ public class PlacemenSystem : MonoBehaviour
     IBuildingState buildingState;
 
 
-
     private void Start()
     {
         StopPlacement();
@@ -86,96 +85,97 @@ public class PlacemenSystem : MonoBehaviour
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;*/
 
+ } 
+
+   public void StartRemoving()
+   {
+       StopPlacement();
+       gridVisualization.SetActive(true);
+       buildingState = new RemovingState(grid, preview, floorData, furnitureData, objectPlacer);
+       inputManager.OnClicked += PlaceStructure;
+       inputManager.OnExit += StopPlacement;
+   }
+
+   private void PlaceStructure()
+   {
+       if(inputManager.IsPointerOverUI())
+       {
+           return;
+       }
+
+       Vector3 mousePosition = inputManager.GetSelectedMapPosition();
+       Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+       buildingState.OnAction(gridPosition);
+
+       /*bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+       if (placementValidity == false)
+       {
+           //source.PlayOneShot(wrongPlacemenClip);
+           return;
+       }
+
+
+       //source.Play();
+       //source.PlayOneShot(correctPlacementClip);
+       int index = objectPlacer.PlaceObject(database.objectsData[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition));
+
+
+       GridData selectedData = database.objectsData[selectedObjectIndex].ID == 0 ?
+          floorData :
+          furnitureData;
+       selectedData.AddObjectAt(gridPosition,
+           database.objectsData[selectedObjectIndex].Size,
+           database.objectsData[selectedObjectIndex].ID,
+           index);
+       preview.UpdatePosition(grid.CellToWorld(gridPosition), false);*/
+
+  } 
+
+/* private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
+ {
+     GridData selectedData = database.objectsData[selectedObjectIndex].ID == 0 ? 
+         floorData : 
+         furnitureData;
+
+     return selectedData.CanPlaceObejcAt(gridPosition, database.objectsData[selectedObjectIndex].Size);
+ }*/
+
+private void StopPlacement()
+{
+    if (buildingState == null)
+        return;
+    //selectedObjectIndex = -1;
+    gridVisualization.SetActive(false);
+    //cellIndicator.SetActive(false);
+    //preview.StopShowingPreview();
+    buildingState.EndState();
+    inputManager.OnClicked -= PlaceStructure;
+    inputManager.OnExit -= StopPlacement;
+    lastDetectedPosition = Vector3Int.zero;
+    buildingState = null;
+
+}
+
+private void Update()
+{
+
+    if (buildingState == null)
+        return;
+    Vector3 mousePosition = inputManager.GetSelectedMapPosition();
+    Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+    if(lastDetectedPosition != gridPosition)
+    {
+        buildingState.UpdateState(gridPosition);
+        lastDetectedPosition = gridPosition;
     }
 
-    public void StartRemoving()
+    // 👉 Aquí agregas la entrada para rotar:
+    if (Input.GetKeyDown(KeyCode.R))  // ROTA CON LA TECLA R
     {
-        StopPlacement();
-        gridVisualization.SetActive(true);
-        buildingState = new RemovingState(grid, preview, floorData, furnitureData, objectPlacer);
-        inputManager.OnClicked += PlaceStructure;
-        inputManager.OnExit += StopPlacement;
+        buildingState.RotatePreview();
     }
-
-    private void PlaceStructure()
-    {
-        if(inputManager.IsPointerOverUI())
-        {
-            return;
-        }
-       
-        Vector3 mousePosition = inputManager.GetSelectedMapPosition();
-        Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-
-        buildingState.OnAction(gridPosition);
-
-        /*bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-        if (placementValidity == false)
-        {
-            //source.PlayOneShot(wrongPlacemenClip);
-            return;
-        }
-
-
-        //source.Play();
-        //source.PlayOneShot(correctPlacementClip);
-        int index = objectPlacer.PlaceObject(database.objectsData[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition));
-
-       
-        GridData selectedData = database.objectsData[selectedObjectIndex].ID == 0 ?
-           floorData :
-           furnitureData;
-        selectedData.AddObjectAt(gridPosition,
-            database.objectsData[selectedObjectIndex].Size,
-            database.objectsData[selectedObjectIndex].ID,
-            index);
-        preview.UpdatePosition(grid.CellToWorld(gridPosition), false);*/
-
-    }
-
-   /* private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
-    {
-        GridData selectedData = database.objectsData[selectedObjectIndex].ID == 0 ? 
-            floorData : 
-            furnitureData;
-
-        return selectedData.CanPlaceObejcAt(gridPosition, database.objectsData[selectedObjectIndex].Size);
-    }*/
-
-    private void StopPlacement()
-    {
-        if (buildingState == null)
-            return;
-        //selectedObjectIndex = -1;
-        gridVisualization.SetActive(false);
-        //cellIndicator.SetActive(false);
-        //preview.StopShowingPreview();
-        buildingState.EndState();
-        inputManager.OnClicked -= PlaceStructure;
-        inputManager.OnExit -= StopPlacement;
-        lastDetectedPosition = Vector3Int.zero;
-        buildingState = null;
-      
-    }
-
-    private void Update()
-    {
-        if (buildingState == null)
-            return;
-        Vector3 mousePosition = inputManager.GetSelectedMapPosition();
-        Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-
-        if(lastDetectedPosition != gridPosition)
-        {
-            buildingState.UpdateState(gridPosition);
-            lastDetectedPosition = gridPosition;
-        }
-
-        // 👉 Aquí agregas la entrada para rotar:
-        if (Input.GetKeyDown(KeyCode.R))  // ROTA CON LA TECLA R
-        {
-            buildingState.RotatePreview();
-        }
-    }
+}
 
 }

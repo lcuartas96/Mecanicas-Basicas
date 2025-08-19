@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +16,7 @@ public class ObjectPlacer : MonoBehaviour
         placedGameOjbect.Add(newObject);
         return placedGameOjbect.Count - 1;
     }*/
+
 
     public int PlaceObject(GameObject prefab, Vector3 position, float yRotation)
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ZonaProhibidaColorBloqueo : MonoBehaviour
+public class ZonaProhibidaColor : MonoBehaviour
 {
     [Header("Color cuando está en zona prohibida")]
     public Color colorProhibido = new Color(1f, 0f, 0f, 0.5f); // Rojo semi-transparente
@@ -9,34 +9,25 @@ public class ZonaProhibidaColorBloqueo : MonoBehaviour
     {
         if (other.CompareTag("Estanteria"))
         {
-            // Guardar color original
             Renderer rend = other.GetComponent<Renderer>();
             if (rend != null)
             {
-                OriginalData data = other.GetComponent<OriginalData>();
-                if (data == null)
+                OriginalColor almacen = other.gameObject.GetComponent<OriginalColor>();
+                if (almacen == null)
                 {
-                    data = other.gameObject.AddComponent<OriginalData>();
-                    data.originalColor = rend.material.color;
-                    data.ultimaPosicionValida = other.transform.position;
+                    almacen = other.gameObject.AddComponent<OriginalColor>();
+                    almacen.originalColor = rend.material.color;
                 }
 
-                // Cambiar a color prohibido
                 rend.material.color = colorProhibido;
             }
-        }
-    }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Estanteria"))
-        {
-            // Bloquear colocación: volver a última posición válida
-            OriginalData data = other.GetComponent<OriginalData>();
-            if (data != null)
+            ColocacionBloqueo bloqueo = other.GetComponent<ColocacionBloqueo>();
+            if (bloqueo == null)
             {
-                other.transform.position = data.ultimaPosicionValida;
+                bloqueo = other.gameObject.AddComponent<ColocacionBloqueo>();
             }
+            bloqueo.enZonaProhibida = true;
         }
     }
 
@@ -44,21 +35,32 @@ public class ZonaProhibidaColorBloqueo : MonoBehaviour
     {
         if (other.CompareTag("Estanteria"))
         {
-            // Restaurar color original
             Renderer rend = other.GetComponent<Renderer>();
-            OriginalData data = other.GetComponent<OriginalData>();
-            if (rend != null && data != null)
+            if (rend != null)
             {
-                rend.material.color = data.originalColor;
-                Destroy(data); // Limpia los datos
+                OriginalColor almacen = other.gameObject.GetComponent<OriginalColor>();
+                if (almacen != null)
+                {
+                    rend.material.color = almacen.originalColor;
+                    Destroy(almacen);
+                }
+            }
+
+            ColocacionBloqueo bloqueo = other.GetComponent<ColocacionBloqueo>();
+            if (bloqueo != null)
+            {
+                bloqueo.enZonaProhibida = false;
             }
         }
     }
 }
 
-// Componente auxiliar para guardar datos originales
-public class OriginalData : MonoBehaviour
+public class OriginalColor : MonoBehaviour
 {
     public Color originalColor;
-    public Vector3 ultimaPosicionValida;
+}
+
+public class ColocacionBloqueo : MonoBehaviour
+{
+    public bool enZonaProhibida = false;
 }
