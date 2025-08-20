@@ -8,11 +8,13 @@ public class CamaraControl : MonoBehaviour
 
     [Header("Mover Cámara")]
     public Transform posicionObjetivo;
+    public Transform posicionObjetivofrente; // NUEVO: segundo punto de destino
     public float velocidad = 1.0f;
 
     private bool modoSeguir = true;
     private bool mover = false;
     private bool volver = false;
+    private bool mover2 = false; // NUEVO: flag para segundo destino
 
     private Vector3 posicionInicio;
     private Quaternion rotacionInicio;
@@ -38,6 +40,7 @@ public class CamaraControl : MonoBehaviour
             modoSeguir = false;
             mover = true;
             volver = false;
+            mover2 = false;
         }
 
         // Volver a posición inicial
@@ -46,6 +49,16 @@ public class CamaraControl : MonoBehaviour
             modoSeguir = false;
             volver = true;
             mover = false;
+            mover2 = false;
+        }
+
+        // Cambiar a segundo punto
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            modoSeguir = false;
+            mover2 = true;
+            mover = false;
+            volver = false;
         }
 
         // Activar modo seguir jugador manualmente
@@ -54,8 +67,10 @@ public class CamaraControl : MonoBehaviour
             modoSeguir = true;
             mover = false;
             volver = false;
+            mover2 = false;
         }
 
+        /*
         // Si estamos en modo seguir
         if (modoSeguir && jugador != null)
         {
@@ -71,9 +86,28 @@ public class CamaraControl : MonoBehaviour
         {
             MoverHacia(posicionInicio, rotacionInicio);
         }
+        */
+        if (modoSeguir && jugador != null)
+        {
+            transform.position = jugador.position + offset;
+        }
+
+        if (mover)
+        {
+            MoverHacia(posicionObjetivo.position, posicionObjetivo.rotation, ref mover);
+        }
+        else if (volver)
+        {
+            MoverHacia(posicionInicio, rotacionInicio, ref volver);
+        }
+        else if (mover2)
+        {
+            MoverHacia(posicionObjetivofrente.position, posicionObjetivofrente.rotation, ref mover2);
+        }
+
     }
 
-    void MoverHacia(Vector3 destinoPos, Quaternion destinoRot)
+    void MoverHacia(Vector3 destinoPos, Quaternion destinoRot, ref bool flag)
     {
         transform.position = Vector3.Lerp(transform.position, destinoPos, velocidad * Time.deltaTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, destinoRot, velocidad * Time.deltaTime);
@@ -84,8 +118,9 @@ public class CamaraControl : MonoBehaviour
         {
             transform.position = destinoPos;
             transform.rotation = destinoRot;
-            mover = false;
-            volver = false;
+            flag = false;
+            //mover = false;
+            //volver = false;
             // No vuelve a seguir automáticamente, solo con tecla S
 
         }

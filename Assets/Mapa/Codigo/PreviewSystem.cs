@@ -93,13 +93,13 @@ public class PreviewSystem : MonoBehaviour
     }
 
 
-    private void ApplyFeedbackToPreview(bool validity)
+    /*private void ApplyFeedbackToPreview(bool validity)
     {
         Color c = validity ? Color.white : Color.red;
 
         c.a = 0.5f;
         //previewMaterialInstance.color = c;
-    }
+    }*/
 
     private void ApplyFeedbackToCursor(bool validity)
     {
@@ -129,5 +129,21 @@ public class PreviewSystem : MonoBehaviour
         cellIndicator.SetActive(true);
         PrepareCursor(Vector2Int.one);
         ApplyFeedbackToCursor(false);
+    }
+
+    // Dentro de PreviewSystem.cs
+    private void ApplyFeedbackToPreview(bool validity) // COLOR DE VALIDACION 
+    {
+        Color c = validity ? Color.white : Color.red;
+        c.a = 0.5f;
+
+        Renderer[] renderers = previewObject.GetComponentsInChildren<Renderer>();
+        foreach (Renderer rend in renderers)
+        {
+            foreach (Material mat in rend.materials)
+            {
+                mat.color = c;
+            }
+        }
     }
 }

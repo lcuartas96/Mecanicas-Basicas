@@ -39,6 +39,9 @@ public class PlacemenSystem : MonoBehaviour
     [SerializeField]
     private ObjectPlacer objectPlacer;
 
+    //[SerializeField]
+    //private ZonaProhibida zonaProhibida;
+
     //bool isRemoving;
 
     IBuildingState buildingState;
@@ -66,6 +69,7 @@ public class PlacemenSystem : MonoBehaviour
                                            floorData,
                                            furnitureData,
                                            objectPlacer);
+                                           //zonaProhibida);
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;
 
