@@ -4595,7 +4595,10 @@ MonoBehaviour:
   jugador: {fileID: 439073035}
   offset: {x: 0, y: 0, z: 0}
   posicionObjetivo: {fileID: 1282141090}
-  posicionObjetivofrente: {fileID: 923856539}
+  posicionObjetivo_enc_2: {fileID: 923856539}
+  posicionObjetivofrente: {fileID: 659098370}
+  posicionObjetivofrente_2: {fileID: 2064110684}
+  posicionObjetivofrente_3: {fileID: 1948738416}
   velocidad: 1
 --- !u!1001 &405426526
 PrefabInstance:
@@ -8510,13 +8513,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659098369}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0016442656, y: 0.6418672, z: -0.7646779, w: -0.05719783}
+  m_LocalRotation: {x: 0.025193384, y: 0.9242102, z: -0.37757272, w: -0.05137692}
   m_LocalPosition: {x: 1.33, y: 17.34, z: -5.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 79.061, y: -21.944, z: -206.735}
+  m_LocalEulerAnglesHint: {x: 44.053, y: -170.874, z: -353.178}
 --- !u!1 &664054391
 GameObject:
   m_ObjectHideFlags: 0
@@ -20144,6 +20147,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fb2b51ce85cb64abe0500e1eedb586, type: 3}
+--- !u!1 &1948738415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948738416}
+  m_Layer: 0
+  m_Name: PuntoDestino_cinco
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1948738416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948738415}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0174208, y: 0.9166094, z: -0.22513628, w: 0.32990518}
+  m_LocalPosition: {x: -9.74, y: 17.22, z: -3.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 23.655, y: 138.023, z: -11.364}
 --- !u!1 &1949787327
 GameObject:
   m_ObjectHideFlags: 0
@@ -21295,6 +21329,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2064110683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064110684}
+  m_Layer: 0
+  m_Name: PuntoDestino_cuatro
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064110684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064110683}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.011973716, y: 0.92447597, z: -0.37520266, w: -0.06651117}
+  m_LocalPosition: {x: 10.69, y: 17.24, z: -7.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 44.053, y: -170.874, z: -357.785}
 --- !u!4 &2068624246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c2fb2b51ce85cb64abe0500e1eedb586,
@@ -25854,6 +25919,8 @@ SceneRoots:
   - {fileID: 1282141090}
   - {fileID: 923856539}
   - {fileID: 659098370}
+  - {fileID: 1948738416}
+  - {fileID: 2064110684}
   - {fileID: 1420441106}
   - {fileID: 1241095343}
   - {fileID: 1599763657}

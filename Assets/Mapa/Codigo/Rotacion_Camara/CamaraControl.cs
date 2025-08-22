@@ -7,14 +7,21 @@ public class CamaraControl : MonoBehaviour
     public Vector3 offset;
 
     [Header("Mover Cámara")]
-    public Transform posicionObjetivo;
-    public Transform posicionObjetivofrente; // NUEVO: segundo punto de destino
+    public Transform posicionObjetivo; // TECLA M punto 1
+    public Transform posicionObjetivo_enc_2; // TECLA H punto 5
+    public Transform posicionObjetivofrente; // NUEVO: segundo punto de destino (tecla J)
+    public Transform posicionObjetivofrente_2; //  punto (tecla L) punto 3
+    public Transform posicionObjetivofrente_3; // punto (tecla K) punto 4
+
     public float velocidad = 1.0f;
 
     private bool modoSeguir = true;
     private bool mover = false;
     private bool volver = false;
     private bool mover2 = false; // NUEVO: flag para segundo destino
+    private bool mover3 = false;
+    private bool mover4 = false; //mover a punto Tecla K
+    private bool mover5 = false; // mover a punto Tecla H 
 
     private Vector3 posicionInicio;
     private Quaternion rotacionInicio;
@@ -39,8 +46,8 @@ public class CamaraControl : MonoBehaviour
         {
             modoSeguir = false;
             mover = true;
-            volver = false;
-            mover2 = false;
+            volver = mover2 = mover3 = mover4 = mover5 = false;
+            
         }
 
         // Volver a posición inicial
@@ -48,8 +55,8 @@ public class CamaraControl : MonoBehaviour
         {
             modoSeguir = false;
             volver = true;
-            mover = false;
-            mover2 = false;
+            mover = mover2 = mover3 = mover4 = mover5 = false;
+           
         }
 
         // Cambiar a segundo punto
@@ -57,17 +64,41 @@ public class CamaraControl : MonoBehaviour
         {
             modoSeguir = false;
             mover2 = true;
-            mover = false;
-            volver = false;
+            mover = volver = mover3 = mover4 = mover5 = false;
+            
+        }
+
+        // Cambiar a tercer punto
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            modoSeguir = false;
+            mover3 = true;
+            mover = volver = mover2 = mover4 = mover5 = false;
+        }
+
+        // Cambiar a cuarto punto 
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            modoSeguir = false;
+            mover4 = true;
+            mover = volver = mover2 = mover3 = mover5 = false;
+        }
+
+        // cambiar a quinto punto
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            modoSeguir = false;
+            mover5 = true;
+            mover = volver = mover2 = mover3 = mover4 = false;
         }
 
         // Activar modo seguir jugador manualmente
         if (Input.GetKeyDown(KeyCode.S))
         {
+
             modoSeguir = true;
-            mover = false;
-            volver = false;
-            mover2 = false;
+            mover = volver = mover2 = mover3 = mover4 = mover5 = false;
+           
         }
 
         /*
@@ -104,6 +135,20 @@ public class CamaraControl : MonoBehaviour
         {
             MoverHacia(posicionObjetivofrente.position, posicionObjetivofrente.rotation, ref mover2);
         }
+        else if (mover3)
+        {
+            MoverHacia(posicionObjetivofrente_2.position, posicionObjetivofrente_2.rotation, ref mover3);
+        }
+        else if (mover4)
+        {
+            MoverHacia(posicionObjetivofrente_3.position, posicionObjetivofrente_3.rotation, ref mover4);
+        }
+        else if (mover5)
+        {
+            MoverHacia(posicionObjetivo_enc_2.position, posicionObjetivo_enc_2.rotation, ref mover5);
+        }
+
+
 
     }
 
