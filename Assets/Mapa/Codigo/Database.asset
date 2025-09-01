@@ -88,3 +88,13 @@ MonoBehaviour:
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 6263669520344722678, guid: af0eb34cc6e1c0446b7aca37ad051864,
       type: 3}
+  - <Name>k__BackingField: Montacargas
+    <ID>k__BackingField: 15
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7395912610663202497, guid: d8d01602ba2fea2479db9ac42ff4344f,
+      type: 3}
+  - <Name>k__BackingField: Conve_simple_lado
+    <ID>k__BackingField: 16
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 198990461917118637, guid: cd547d5e6a0efa14885b6ea4bdd72144,
+      type: 3}
