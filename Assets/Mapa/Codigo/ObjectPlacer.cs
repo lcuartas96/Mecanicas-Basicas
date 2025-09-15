@@ -43,8 +43,9 @@ public class ObjectPlacer : MonoBehaviour
 
         // El método original de PlaceObject no cambia,
         // la lógica de validación se haría ANTES de llamarlo.
-
-        GameObject newObject = Instantiate(prefab, position, Quaternion.Euler(0, yRotation, 0));
+        Vector3 pos2 = position;
+        pos2.y = 0;
+        GameObject newObject = Instantiate(prefab, pos2, Quaternion.Euler(0, yRotation, 0));
         placedGameOjbect.Add(newObject);
         return placedGameOjbect.Count - 1; // SE AGREGO PARA LA ROTACION
     }
