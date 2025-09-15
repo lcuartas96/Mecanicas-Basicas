@@ -9,6 +9,82 @@ public class MontacargasController : MonoBehaviour
     public MonoBehaviour scriptMovimientoJugador;     // Script de movimiento jugador
     public CamaraControl camaraControl;               // 👈 Script de cámara
     public Transform camaraJugador;                   // Punto de referencia cámara jugador
+    public Camera camaraMontacargas;                  // 👈 Cámara del montacargas (asignar desde prefab)
+
+    private bool conduciendo = false;
+
+    void Start()
+    {
+        // El montacargas empieza sin control ni cámara activa
+        scriptMovimientoMontacargas.enabled = false;
+        if (camaraMontacargas != null)
+            camaraMontacargas.gameObject.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (!conduciendo && Vector3.Distance(jugador.transform.position, transform.position) < 3f)
+            {
+                EntrarMontacargas();
+            }
+            else if (conduciendo)
+            {
+                SalirMontacargas();
+            }
+        }
+    }
+
+    void EntrarMontacargas()
+    {
+        // Desactivar jugador
+        scriptMovimientoJugador.enabled = false;
+        jugador.SetActive(false);
+
+        // Activar control del montacargas
+        scriptMovimientoMontacargas.enabled = true;
+
+        // Cambiar cámaras
+        camaraControl.gameObject.SetActive(false); // apagar cámara principal
+        if (camaraMontacargas != null)
+            camaraMontacargas.gameObject.SetActive(true); // encender cámara montacargas
+
+        conduciendo = true;
+    }
+
+    void SalirMontacargas()
+    {
+        // Reactivar jugador
+        jugador.SetActive(true);
+        jugador.transform.position = asiento.position + transform.right * 2f;
+        scriptMovimientoJugador.enabled = true;
+
+        // Desactivar control montacargas
+        scriptMovimientoMontacargas.enabled = false;
+
+        // Cambiar cámaras
+        if (camaraMontacargas != null)
+            camaraMontacargas.gameObject.SetActive(false); // apagar cámara montacargas
+        camaraControl.gameObject.SetActive(true); // encender cámara principal
+
+        conduciendo = false;
+    }
+}
+
+
+
+/*using UnityEngine;
+
+public class MontacargasController : MonoBehaviour
+{
+    [Header("Referencias")]
+    public GameObject jugador; // El personaje
+    public Transform asiento;  // Punto de referencia del asiento
+    public MonoBehaviour scriptMovimientoMontacargas; // Script de conducción
+    public MonoBehaviour scriptMovimientoJugador;     // Script de movimiento jugador
+    public CamaraControl camaraControl;               // 👈 Script de cámara
+    public Transform camaraJugador;                   // Punto de referencia cámara jugador
 
     private bool conduciendo = false;
 
@@ -65,7 +141,7 @@ public class MontacargasController : MonoBehaviour
         conduciendo = false;
     }
 }
-
+*/
 
 
 

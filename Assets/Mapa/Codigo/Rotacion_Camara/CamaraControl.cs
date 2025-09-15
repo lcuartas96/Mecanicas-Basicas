@@ -32,6 +32,7 @@ public class CamaraControl : MonoBehaviour
     private Vector3 posicionInicio;
     private Quaternion rotacionInicio;
 
+
     void Start()
     {
         // Guardar posición inicial de la cámara

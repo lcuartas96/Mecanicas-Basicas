@@ -9,6 +9,7 @@ TagManager:
   - Camera.main
   - Estanteria
   - ZonaProhibida
+  - Unir
   layers:
   - Default
   - TransparentFX

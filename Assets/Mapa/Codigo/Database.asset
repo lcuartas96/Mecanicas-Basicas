@@ -66,7 +66,7 @@ MonoBehaviour:
   - <Name>k__BackingField: Convensional_simple
     <ID>k__BackingField: 10
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 7101393528513500905, guid: 9071e4f2e22d6d0489a4eaf5168b0a21,
+    <Prefab>k__BackingField: {fileID: 6700624819113970038, guid: 8b3c2a6cebb68904ebb9f159469487c6,
       type: 3}
   - <Name>k__BackingField: Doble
     <ID>k__BackingField: 11
@@ -96,5 +96,5 @@ MonoBehaviour:
   - <Name>k__BackingField: Conve_simple_lado
     <ID>k__BackingField: 16
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 198990461917118637, guid: cd547d5e6a0efa14885b6ea4bdd72144,
+    <Prefab>k__BackingField: {fileID: 576116647716599332, guid: ba5ae9c11a545f24a9074c414e213771,
       type: 3}
