@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1380231928418343257}
   m_Layer: 0
   m_Name: Carton_Flow_2_varias
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,6 +588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carton_Flow_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 680854365289263836, guid: d1940041d5e1e914990189fafc696719,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 7533731291459964373, guid: d1940041d5e1e914990189fafc696719,
         type: 3}

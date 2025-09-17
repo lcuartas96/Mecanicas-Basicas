@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 6057278771899269736}
   m_Layer: 0
   m_Name: Carton_Flow
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -617,6 +617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carton_Flow (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -696,6 +701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carton_Flow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
@@ -777,6 +787,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carton_Flow (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -856,6 +871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carton_Flow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
@@ -993,6 +1013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carton_Flow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1072,6 +1097,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carton_Flow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
@@ -1153,6 +1183,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carton_Flow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1233,6 +1268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carton_Flow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1312,6 +1352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carton_Flow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181016465676513750, guid: e8ae121161a8c244f98c7161e1bfcec5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 7157560749852428402, guid: e8ae121161a8c244f98c7161e1bfcec5,
         type: 3}

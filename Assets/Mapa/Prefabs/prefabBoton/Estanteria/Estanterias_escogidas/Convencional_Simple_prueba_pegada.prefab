@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 1559127882847136959}
   m_Layer: 0
   m_Name: Convencional_Simple_prueba_pegada
-  m_TagString: Unir
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -946,6 +946,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1161,6 +1166,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}
@@ -1453,6 +1463,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1544,6 +1559,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}
@@ -1637,6 +1657,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1728,6 +1753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 191491675893922694, guid: 8cd11c5597273714faa32638ad1a556d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     - target: {fileID: 3662473227241591238, guid: 8cd11c5597273714faa32638ad1a556d,
         type: 3}

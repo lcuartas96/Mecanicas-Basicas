@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 5206772611596477060}
   m_Layer: 0
   m_Name: Varias_Drive_in
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -667,6 +667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drive_in
       objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -865,6 +870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drive_in (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -944,6 +954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drive_in (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1025,6 +1040,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drive_in (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1104,6 +1124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drive_in (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1185,6 +1210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drive_in (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1264,6 +1294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drive_in (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1345,6 +1380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drive_in (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1424,6 +1464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drive_in (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303101538774358777, guid: 7b6bfa53c05bf8c4d8c1f40ce5796140,
+        type: 3}
+      propertyPath: m_TagString
+      value: Estanteria
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

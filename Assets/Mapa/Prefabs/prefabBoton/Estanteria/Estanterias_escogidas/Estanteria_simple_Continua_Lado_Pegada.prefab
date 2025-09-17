@@ -220,11 +220,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4474044627025283771}
   - component: {fileID: 1040467685715577401}
-  - component: {fileID: 5619957890069834666}
   - component: {fileID: 5889034870842948941}
   m_Layer: 0
   m_Name: Estanteria_simple_Continua_Lado_Pegada
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,18 +283,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5619957890069834666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576116647716599332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a930e74836d4594381034d8d7146f94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &5889034870842948941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -328,7 +315,7 @@ GameObject:
   - component: {fileID: 4023425613276683125}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (2)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +422,7 @@ GameObject:
   - component: {fileID: 2416754876895845190}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (5)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -637,7 +624,7 @@ GameObject:
   - component: {fileID: 4149311409642680337}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (8)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -669,7 +656,7 @@ GameObject:
   - component: {fileID: 5428007726003647115}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (1)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -701,7 +688,7 @@ GameObject:
   - component: {fileID: 5345009377171468809}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (3)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -733,7 +720,7 @@ GameObject:
   - component: {fileID: 2455238898677328058}
   m_Layer: 0
   m_Name: Estanteria_simple_continua
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1058,7 +1045,7 @@ GameObject:
   - component: {fileID: 2649877091306832033}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (7)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1217,7 +1204,7 @@ GameObject:
   - component: {fileID: 5843912765222707522}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (6)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1249,7 +1236,7 @@ GameObject:
   - component: {fileID: 6951754779654921812}
   m_Layer: 0
   m_Name: Estanteria_simple_continua (4)
-  m_TagString: Untagged
+  m_TagString: Estanteria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
