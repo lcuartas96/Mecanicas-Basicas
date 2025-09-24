@@ -337,7 +337,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7145114104134080617
 Transform:
   m_ObjectHideFlags: 0
@@ -479,7 +479,7 @@ GameObject:
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1477833207129662404
 Transform:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 1559127882847136959}
   m_Layer: 0
   m_Name: Convencional_Simple_prueba_pegada
-  m_TagString: Estanteria
+  m_TagString: Unir
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,7 +665,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -725,7 +725,7 @@ Transform:
   m_GameObject: {fileID: 7318227977460375575}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.662, y: 0.213, z: -0.039}
+  m_LocalPosition: {x: -3.674, y: 0.029, z: -0.039}
   m_LocalScale: {x: 0.39813256, y: 0.39813256, z: 0.39813256}
   m_ConstrainProportionsScale: 0
   m_Children: []
