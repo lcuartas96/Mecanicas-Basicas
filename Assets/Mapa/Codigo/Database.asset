@@ -21,7 +21,7 @@ MonoBehaviour:
   - <Name>k__BackingField: Caja
     <ID>k__BackingField: 1
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 3975971421519028769, guid: 8bb2c7b72ae4ce94a80a68b43b0cc5b8,
+    <Prefab>k__BackingField: {fileID: 7153180082048132326, guid: 986c51982f942a246937cb671f8cd9c7,
       type: 3}
   - <Name>k__BackingField: Modulo1
     <ID>k__BackingField: 2
