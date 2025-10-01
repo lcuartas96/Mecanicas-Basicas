@@ -66,7 +66,7 @@ MonoBehaviour:
   - <Name>k__BackingField: Convensional_simple Pegada
     <ID>k__BackingField: 10
     <Size>k__BackingField: {x: 1, y: 1}
-    <Prefab>k__BackingField: {fileID: 6700624819113970038, guid: 8b3c2a6cebb68904ebb9f159469487c6,
+    <Prefab>k__BackingField: {fileID: 5105491440454329624, guid: 3f79ae01d5db1eb489c8423d68396f6c,
       type: 3}
   - <Name>k__BackingField: Doble
     <ID>k__BackingField: 11
@@ -102,4 +102,9 @@ MonoBehaviour:
     <ID>k__BackingField: 17
     <Size>k__BackingField: {x: 1, y: 1}
     <Prefab>k__BackingField: {fileID: 6738208062062383571, guid: e0838579218ef1a4fbf120af65298014,
+      type: 3}
+  - <Name>k__BackingField: Conve_simple_lado_2
+    <ID>k__BackingField: 18
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4011199503840736830, guid: cbca894231901174da8d83be69e64560,
       type: 3}

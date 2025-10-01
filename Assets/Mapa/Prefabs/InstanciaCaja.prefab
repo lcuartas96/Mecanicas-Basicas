@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a066ae00928d08b478c3f8c294637552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombrePiezaBoton: 
-  nombrePieza: 
+  nombrePiezaBoton: caja
+  nombrePieza: caja
   descripcionPieza: 
-  prefabInstancia: {fileID: 0}
-  icono: {fileID: 0}
+  prefabInstancia: {fileID: 7153180082048132326}
+  icono: {fileID: 21300000, guid: b5d7434f7bb062544ae35eb6cf036fc4, type: 3}
