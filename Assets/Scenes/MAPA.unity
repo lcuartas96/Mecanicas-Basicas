@@ -2858,7 +2858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &239484696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20499,7 +20499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1539559655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25534,10 +25534,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1539559658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1997978392
 MonoBehaviour:
@@ -28706,6 +28706,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3349919311587570960, guid: 0dc5ca603e8ba5840a7693402cf46601,
+        type: 3}
+      propertyPath: m_TagString
+      value: Caja
+      objectReference: {fileID: 0}
     - target: {fileID: 9130384267741622714, guid: 0dc5ca603e8ba5840a7693402cf46601,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28759,6 +28764,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7934508222267755425, guid: 0dc5ca603e8ba5840a7693402cf46601, type: 3}
     - {fileID: 5527190449865665998, guid: 0dc5ca603e8ba5840a7693402cf46601, type: 3}
+    - {fileID: 2399986889623448012, guid: 0dc5ca603e8ba5840a7693402cf46601, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

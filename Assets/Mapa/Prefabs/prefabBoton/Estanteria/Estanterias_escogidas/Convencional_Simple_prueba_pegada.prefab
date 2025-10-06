@@ -346,8 +346,8 @@ Transform:
   m_GameObject: {fileID: 4218897567626285024}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.992, y: 1.174, z: -0.321}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: -0.938, y: 1.107, z: -0.321}
+  m_LocalScale: {x: 1, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7970859844665196735}
@@ -475,8 +475,8 @@ Transform:
   m_GameObject: {fileID: 5157938086871589550}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.149, y: 1.174, z: -0.321}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.203, y: 1.174, z: -0.321}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7970859844665196735}
@@ -601,6 +601,7 @@ GameObject:
   - component: {fileID: 7970859844665196735}
   - component: {fileID: 3192284960330646852}
   - component: {fileID: 1559127882847136959}
+  - component: {fileID: 1493589860659999305}
   m_Layer: 0
   m_Name: Convencional_Simple_prueba_pegada
   m_TagString: Unir
@@ -685,6 +686,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1493589860659999305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6700624819113970038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64abeee9c3883164f89847d355cc5d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosInstancia:
+  - {fileID: 7145114104134080617}
+  - {fileID: 1477833207129662404}
+  - {fileID: 6550575557004399889}
 --- !u!1 &7318227977460375575
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +872,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.73, y: 1.174, z: -0.321}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7970859844665196735}

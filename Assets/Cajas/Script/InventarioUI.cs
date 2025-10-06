@@ -393,13 +393,16 @@ public class InventarioUI : MonoBehaviour
 
 
     public static GameObject objetoSeleccionado; // Objeto listo para colocarse
+    public static GameObject botonSeleccionado;    // Botón del inventario asociado
 
     // Cuando se presiona un botón del inventario
-    public void SeleccionarObjeto(GameObject prefab)
+    public void SeleccionarObjeto(GameObject prefab, GameObject boton)
     {
         objetoSeleccionado = prefab;
+        botonSeleccionado = boton; // ? este sí es el botón presionado
         Debug.Log("Objeto seleccionado: " + prefab.name);
     }
+
 
     public void AgregarAlInventario(Sprite icono, GameObject prefab, string nombreBoton, string descripcionPieza, GameObject objetoEscena)
     {
@@ -426,7 +429,8 @@ public class InventarioUI : MonoBehaviour
 
             // Listener -> seleccionar el objeto
             Button botonUI = nuevoBoton.GetComponent<Button>();
-            botonUI.onClick.AddListener(() => SeleccionarObjeto(prefab));
+            botonUI.onClick.AddListener(() => SeleccionarObjeto(prefab, nuevoBoton));
+
 
             contadorInstancias += 1;
         }
